@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-Problem-Fixed</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Chart.js for Visitor Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- First Row: Logo -->
+        <div class="row justify-content-center align-items-center py-3">
+            <div class="col-12 text-center logo">
+                <a href="index.html"><img src="img/logo.png" alt="Ever True Info">Ever True Info</a>
+            </div>
+        </div>
+    
+        <!-- Second Row: Search Bar and Dark/Light Switch -->
+        <div class="row justify-content-between align-items-center py-3 mx-4">
+            <div class="col-8 text-center searchbar">
+                <form class="d-flex" action="search.html" method="GET">
+                    <input class="form-control" type="search" placeholder="Search..." aria-label="Search" name="query">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="col-4 text-end dark-icon">
+                <button type="button" class="btn btn-light" id="themeToggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Links -->
+    <div class="row justify-content-center">
+        <div class="navbar col-12 text-center">
+            <ul class="d-flex justify-content-center">
+                <li class="mx-3" style="--i: #ff55b2; --j: rgb(111, 12, 90);">
+                    <span class="icon">
+                        <i class="fa-solid fa-house-chimney"></i></span>
+                    <span class="text">Home</span>
+                </li>
+                <li class="mx-3" style="--i: #ff55b2; --j: rgb(111, 12, 90);">
+                    <span class="icon">
+                        <i class="fa-solid fa-person"></i></span>
+                    <span class="text">About</span>
+                </li>
+                <li class="mx-3" style="--i: #ff55b2; --j: rgb(111, 12, 90);">
+                    <span class="icon">
+                        <i class="fa-brands fa-rocketchat"></i></span>
+                    <span class="text">Contact</span>
+                </li>
+            </ul>
+        </div>
+        <hr class="navbar-hr">
+    </div>
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white">
+        <div class="container">
+            <h1>Welcome to Tech Problem Fixed</h1>
+            <p>Explore by Category</p>
+            <div>
+                <button class="btn btn-primary m-3 filter-btn" data-category="android-posts">Android Tips And Problem Fix</button>
+                <button class="btn btn-primary m-3 filter-btn" data-category="ethical-hacking-posts" id="ethical-hacking-posts">Start Ethical Hacking on Android</button>
+                <button class="btn btn-primary m-3 filter-btn" data-category="earning-tricks-tips-posts">Latest Tricks Earning Tips Using Tech</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Posts Title -->
+    <div class="container">
+        <h1 class="text-center my-4">All Kind Tutorials Learnings Fixing Problems Tech Info Ethical Hacking You May Learn Easily On Our Platform <br/>(2025 Step-by-Step Guide)</h1>
+    </div>
+
+    <!-- Visitor Counter and Chart -->
+    <div class="container">
+        <div id="visitor-count" class="text-center my-3">Total Visitors: <span id="total">0</span></div>
+        <canvas id="visitorChart" width="400" height="200" class="mb-4"></canvas>
+    </div>
+
+    <!-- Card Section -->
+    <div class="container post-section">
+        <div class="row">
+            <!-- Post Card 1: Android Tips -->
+            <div class="col-md-4 mb-4 post-card" data-category="android-posts">
+                <div class="post card">
+                    <img src="img/android-speed.jpg" alt="Android Speed Up" class="post-image card-img-top">
+                    <div class="card-body">
+                        <h5 class="post-title card-title">How to Speed Up Your Android Phone</h5>
+                        <p class="post-description card-text">Is your Android phone slow? Follow these easy steps to make it faster in minutes!</p>
+                        <a href="posts/post1.html" class="btn btn-primary read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Post Card 2: Termux Intro -->
+            <div class="col-md-4 mb-4 post-card" data-category="android-posts">
+                <div class="post card">
+                    <img src="img/termux-intro.jpg" alt="Termux Intro" class="post-image card-img-top">
+                    <div class="card-body">
+                        <h5 class="post-title card-title">Introduction to Termux: Turn Your Android into a Linux Terminal</h5>
+                        <p class="post-description card-text">Learn how to use Termux to run Linux commands on your Android phone.</p>
+                        <a href="posts/post2.html" class="btn btn-primary read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Post Card 3: Ethical Hacking -->
+            <div class="col-md-4 mb-4 post-card" data-category="ethical-hacking-posts">
+                <div class="post card">
+                    <img src="img/ethical-hacking.jpg" alt="Ethical Hacking" class="post-image card-img-top">
+                    <div class="card-body">
+                        <h5 class="post-title card-title">Ethical Hacking Basics: What You Need to Know</h5>
+                        <p class="post-description card-text">Start your journey in ethical hacking with this beginner-friendly guide.</p>
+                        <a href="posts/post3.html" class="btn btn-primary read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 TechBit. All Rights Reserved.</p>
+    </footer>
+</div>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

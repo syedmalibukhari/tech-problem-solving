@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Termux</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container post-container">
+        <!-- Post Header -->
+        <div class="post">
+            <img src="../img/termux-intro.jpg" alt="Termux Intro" class="post-image img-fluid">
+            <h2 class="post-title">Introduction to Termux: Turn Your Android into a Linux Terminal</h2>
+            <p class="post-description">Learn how to use Termux to run Linux commands on your Android phone.</p>
+            <button class="btn btn-primary read-more">Read More</button>
+        </div>
+        <!-- Full Post -->
+        <div class="full-post d-none">
+            <button class="btn btn-secondary back-btn">Back</button>
+            <h2>Introduction to Termux: Turn Your Android into a Linux Terminal</h2>
+            <img src="../img/termux-intro.jpg" alt="Termux Intro" class="img-fluid mb-3">
+            <p>Termux is a powerful app that turns your Android phone into a Linux terminal. You can run commands, install tools, and even code on your phone. This guide will help you get started with Termux in simple steps.</p>
+            <h3>Step 1: Install Termux</h3>
+            <ul>
+                <li>Go to the <strong>Google Play Store</strong> or <strong>F-Droid</strong>.</li>
+                <li>Search for <strong>Termux</strong> and install it.</li>
+                <li>Open Termux and grant storage permissions when asked.</li>
+            </ul>
+            <h3>Step 2: Update Termux</h3>
+            <ul>
+                <li>In Termux, type <code>pkg update && pkg upgrade</code> and press Enter.</li>
+                <li>Wait for the update to finish. This keeps Termux up-to-date.</li>
+                <li>If asked to confirm, type <code>y</code> and press Enter.</li>
+            </ul>
+            <h3>Step 3: Learn Basic Commands</h3>
+            <ul>
+                <li><code>ls</code>: Lists files and folders in the current directory.</li>
+                <li><code>cd directory_name</code>: Changes to a different folder.</li>
+                <li><code>mkdir folder_name</code>: Creates a new folder.</li>
+                <li><code>clear</code>: Clears the screen.</li>
+            </ul>
+            <h3>Step 4: Install a Tool (Example: Python)</h3>
+            <ul>
+                <li>Type <code>pkg install python</code> and press Enter.</li>
+                <li>Wait for Python to install.</li>
+                <li>Test it by typing <code>python --version</code>.</li>
+            </ul>
+            <h3>Step 5: Explore More</h3>
+            <ul>
+                <li>Try commands like <code>whoami</code> or <code>pwd</code>.</li>
+                <li>Install other tools like <code>git</code>, <code>nano</code>, or <code>wget</code>.</li>
+                <li>Use Termux to code or run scripts on your phone.</li>
+            </ul>
+            <p><strong>Tip:</strong> Join Termux communities on Telegram or Reddit to learn more tricks!</p>
+            <div class="comment-section mt-4">
+                <h3>Comments</h3>
+                <form class="comment-form">
+                    <div class="mb-3">
+                        <label for="commentName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="commentName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="commentText" class="form-label">Comment</label>
+                        <textarea class="form-control" id="commentText" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post Comment</button>
+                </form>
+                <div class="comments-list mt-3"></div>
+            </div>
+            <div class="share-section mt-4">
+                <button class="btn btn-info share-btn">Share</button>
+                <div class="share-options d-none">
+                    <a href="#" class="share-icon"><img src="../assets/social-icons/twitter.svg" alt="Twitter"></a>
+                    <a href="#" class="share-icon"><img src="../assets/social-icons/facebook.svg" alt="Facebook"></a>
+                    <a href="#" class="share-icon"><img src="../assets/social-icons/linkedin.svg" alt="LinkedIn"></a>
+                    <button class="btn btn-secondary close-share">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
